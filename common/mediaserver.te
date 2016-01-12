@@ -83,3 +83,7 @@ set_prop(mediaserver, dolby_prop)
 
 # Rule for RILD to talk to peripheral manager
 use_per_mgr(mediaserver);
+
+allow mediaserver system_data_file:sock_file write;
+
+
