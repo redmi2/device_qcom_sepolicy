@@ -146,7 +146,7 @@ allow qti_init_shell kernel:key search;
 allow qti_init_shell sysfs_hsic_modem_wait:file { r_file_perms setattr };
 
 # core-ctl
-allow qti_init_shell cgroup:dir add_name;
+allow qti_init_shell cgroup:dir { create add_name };
 
 # To allow copy for mbn files
 r_dir_file(qti_init_shell, firmware_file)
