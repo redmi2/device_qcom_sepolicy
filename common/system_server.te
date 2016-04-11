@@ -126,3 +126,6 @@ r_dir_file(system_server, dhcp_data_file)
 
 allow system_server time_daemon:unix_stream_socket connectto;
 allow system_server zygote:binder call;
+
+allow system_server sysfs_dt2w:file rw_file_perms;
+allow system_server sysfs_dt2w:dir search;
