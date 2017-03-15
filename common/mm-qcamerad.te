@@ -20,6 +20,9 @@ userdebug_or_eng(`
 
 ')
 
+# For text relocations
+allow mm-qcamerad system_file:file execmod;
+
 #Communicate with user land process through domain socket
 allow mm-qcamerad camera_socket:sock_file { create unlink write };
 allow mm-qcamerad camera_socket:dir w_dir_perms;

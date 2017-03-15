@@ -20,6 +20,9 @@ userdebug_or_eng(`
   #allow mediaserver debugfs:file rw_file_perms;
 ')
 
+# For text relocations
+allow mediaserver system_file:file execmod;
+
 r_dir_file(mediaserver, sysfs_esoc)
 allow mediaserver system_app_data_file:file rw_file_perms;
 
