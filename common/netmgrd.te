@@ -74,3 +74,8 @@ allow netmgrd { wcnss_service_exec wpa_exec shell_exec toolbox_exec }:file rx_fi
 
 #Allow netmgrd to use wakelock
 wakelock_use(netmgrd)
+
+allow netmgrd self:capability dac_override;
+
+
+
