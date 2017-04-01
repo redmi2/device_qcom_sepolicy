@@ -17,6 +17,8 @@ userdebug_or_eng(`
 
   # mm-qcamerad needs to set persist.camera. property
   allow mm-qcamerad camera_prop:property_service set;
+  
+  allow mm-qcamerad system_data_file:sock_file write;
 
 ')
 
