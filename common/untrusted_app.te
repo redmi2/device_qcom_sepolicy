@@ -23,3 +23,6 @@ userdebug_or_eng(`
 
 # for finding gba_auth_service
 allow untrusted_app gba_auth_service:service_manager find;
+
+allow untrusted_app sysfs:file { read getattr open };
+allow untrusted_app system_data_file:file { read getattr };
